@@ -4,19 +4,38 @@ import * as menu from './menu.js';
 import * as contact from './contact.js';
 
 const page = (function () {
-  const homeButton = document.querySelector('button.home');
-  const menuButton = document.querySelector('button.menu');
-  const contactButton = document.querySelector('button.contact');
+  const pageInit = () => {
+    const buttons = document.querySelectorAll('button');
+    const homeButton = document.querySelector('button.home');
+    homeButton.classList.add('selected');
 
-  homeButton.addEventListener('click', () => {
-    console.log(home.greeting);
-  });
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => HandleButtonEventListners(button));
+    });
+  };
 
-  menuButton.addEventListener('click', () => {
-    console.log(menu.greeting);
-  });
+  const HandleButtonEventListners = (button) => {
+    const buttonName = button.classList[0];
+    selectButton(button);
 
-  contactButton.addEventListener('click', () => {
-    console.log(contact.greeting);
-  });
+    switch (buttonName) {
+      case 'home':
+        console.log(home.greeting);
+        break;
+      case 'menu':
+        console.log(menu.greeting);
+        break;
+      case 'contact': 
+        console.log(contact.greeting);
+        break;
+    }
+  };
+
+  const selectButton = (newSelectedButton) => {
+    const prevSelectedButton = document.querySelector('button.selected');
+    prevSelectedButton.classList.remove('selected');
+    newSelectedButton.classList.add('selected');
+  };
+
+  pageInit();
 })();
