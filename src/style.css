@@ -81,3 +81,17 @@ main {
   background-color: var(--base-color);
   border-radius: 2rem;
 }
+
+.sub-section {
+  background-color: var(--base-color);
+  border: solid 0.4rem var(--border-color);
+  border-radius: 1.25rem;
+  width: 30rem;
+  padding: 1rem 2rem;
+}
+
+.heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Roboto Slab';
+}
