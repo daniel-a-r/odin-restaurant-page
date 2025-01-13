@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --base-color: #6790EA;
+  --button-color: #4966A6;
+  --main-bg-color: #46629E;
+  --border-color: #EBC367;
+}
+
 body, ul {
   margin: 0;
 }
@@ -9,7 +16,7 @@ body, ul {
 body {
   padding: 1rem;
   font-family: 'Inter', 'Roboto Slab';
-  background-color: #6790EA;
+  background-color: var(--base-color);
 }
 
 header {
@@ -17,8 +24,6 @@ header {
 }
 
 ul {
-  /* width: max-content;
-  margin: 0 auto; */
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -39,10 +44,10 @@ button {
   border-top-right-radius: 1rem;
   width: 10rem;
   height: 4rem;
-  background-color: #6790EA;
+  background-color: var(--base-color);
 }
 
 button.selected {
-  background-color: #4966A6;
-  box-shadow: 0px 1px #6790EA;
+  background-color: var(--button-color);
+  box-shadow: 0px 1px var(--button-color);
 }
