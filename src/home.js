@@ -25,15 +25,19 @@ const createAboutSubsection = () => {
 
 const createHoursSubSection = () => {
   const hours = htmlHelper.createSubSection('Hours');
+  const content = htmlHelper.createContainer('hours-container');
   const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  
   daysOfWeek.forEach((day) => {
     const dailyHours = htmlHelper.createContainer('daily-hours');
     const dayElem = htmlHelper.createElem('span', 'day', `${day}:`);
     const timeElem = htmlHelper.createElem('span', 'time', '9AM-9PM');
     dailyHours.appendChild(dayElem);
     dailyHours.appendChild(timeElem);
-    hours.appendChild(dailyHours);
+    content.appendChild(dailyHours);
   });
+
+  hours.appendChild(content);
   return hours;
 };
 
