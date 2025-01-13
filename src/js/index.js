@@ -1,4 +1,4 @@
-import './style.css';
+import '../css/style.css';
 import * as home from './home.js';
 import * as menu from './menu.js';
 import * as contact from './contact.js';

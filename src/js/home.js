@@ -1,4 +1,4 @@
-import './home.css';
+import '../css/home.css';
 import * as htmlHelper from './htmlHelper.js';
 
 export const createPage = () => {

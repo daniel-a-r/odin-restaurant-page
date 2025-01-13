@@ -1,5 +1,5 @@
 import * as htmlHelper from './htmlHelper.js';
-import './menu.css';
+import '../css/menu.css';
 
 export const createPage = () => {
   const main = document.querySelector('main');
