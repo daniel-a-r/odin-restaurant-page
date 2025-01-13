@@ -11,10 +11,7 @@ export const createContainer = (containerClassName) => {
   return container;
 };
 
-export const createSection = () => {
-  const section = createContainer('section');
-  return section;
-};
+export const createSection = () => createContainer('section');
 
 export const createSubSection = (headingText) => {
   const subSection = createContainer('sub-section');
@@ -24,13 +21,11 @@ export const createSubSection = (headingText) => {
 };
 
 export const createTitle = (titleName, titleType='main-title') => {
-  const title = createElem('div', titleType, titleName);
-  return title;    
+  return createElem('div', titleType, titleName); 
 };
 
 export const createHeading = (headingText) => {
-  const heading = createElem('div', 'heading', headingText);
-  return heading;
+  return createElem('div', 'heading', headingText);
 };
 
 export const appendChildren = (parent, ...children) => {
