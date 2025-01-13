@@ -1,6 +1,5 @@
 import './home.css';
 import * as htmlHelper from './htmlHelper.js';
-export const greeting = 'hello from home';
 
 export const createPage = () => {
   const createAboutSubsection = () => {

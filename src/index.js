@@ -18,19 +18,27 @@ const page = (function () {
   const HandleButtonEventListners = (button) => {
     const buttonName = button.classList[0];
     selectButton(button);
+    clearMain();
 
     switch (buttonName) {
       case 'home':
-        console.log(home.greeting);
+        home.createPage();
         break;
       case 'menu':
-        console.log(menu.greeting);
+        menu.createPage();
         break;
       case 'contact': 
-        console.log(contact.greeting);
+        contact.createPage();
         break;
     }
   };
+
+  const clearMain = () => {
+    const main = document.querySelector('main');
+    while (main.hasChildNodes()) {
+      main.removeChild(main.firstChild);
+    }
+  }
 
   const selectButton = (newSelectedButton) => {
     const prevSelectedButton = document.querySelector('button.selected');
