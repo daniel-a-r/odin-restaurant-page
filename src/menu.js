@@ -19,7 +19,7 @@ const createSidesSection = () => {
       price: '$4'
     },
     {
-      name: 'Mozerella Sticks',
+      name: 'Mozarella Sticks',
       desc: 'Lorem ipsum odor amet, consectetuer adipiscing elit. Non senectus vel elementum ut purus.',
       price: '$5'
     }
