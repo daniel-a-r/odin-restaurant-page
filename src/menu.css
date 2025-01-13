@@ -1,0 +1,15 @@
+.sub-title {
+  width: 35rem;
+  font-family: 'Roboto Slab';
+  font-size: 2.25rem;
+  font-weight: 450;
+  background-color: var(--base-color);
+  border: solid 0.4rem var(--border-color);
+  border-radius: 1.25rem;
+  text-align: center;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
