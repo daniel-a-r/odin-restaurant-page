@@ -51,3 +51,33 @@ button.selected {
   background-color: var(--button-color);
   box-shadow: 0px 1px var(--button-color);
 }
+
+main {
+  background-color: var(--main-bg-color);
+  padding: 2rem 4rem;
+  width: 50rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  border-radius: 3rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-family: 'Roboto Slab';
+  font-weight: 450;
+  text-align: center;
+  width: 100%;
+  padding: 0.25rem 0;
+  border: solid 0.5rem var(--border-color);
+  background-color: var(--base-color);
+  border-radius: 2rem;
+}

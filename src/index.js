@@ -8,6 +8,7 @@ const page = (function () {
     const buttons = document.querySelectorAll('button');
     const homeButton = document.querySelector('button.home');
     homeButton.classList.add('selected');
+    home.createPage();
 
     buttons.forEach((button) => {
       button.addEventListener('click', () => HandleButtonEventListners(button));
